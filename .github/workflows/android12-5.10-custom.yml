@@ -54,7 +54,7 @@ jobs:
         repo sync -c -j$(nproc --all)
         # 切换到指定的 tag/分支
         cd common
-        git fetch --depth 1 aosp android12-5.10-2024-05
+        git fetch --depth 1 origin android12-5.10-2024-05
         git checkout FETCH_HEAD
 
     - name: Apply patches and configuration files
